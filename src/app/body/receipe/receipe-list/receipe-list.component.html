@@ -1,0 +1,27 @@
+
+  <h3>Receipe List</h3>
+<hr>
+<div class="row">
+  <div *ngFor="let r of receipeList" class="card">
+    <div class="card-header">
+      {{r.name}}
+    </div>
+    <div class="card-body media">
+      <img class="mr-3" src="{{r.imageUrl}}">
+      <div class="media-body">
+        <h5 class="card-title">{{r.name}}</h5>
+        <p class="card-text">{{r.description}}</p>
+        <a href="#" class="btn btn-primary float-right">See Details</a>
+      </div>
+    </div>
+  </div>
+  <!-- <ul class="list-unstyled">
+    <li *ngFor="let r of receipeList" class="media horizontalLine " >
+      <img class="mr-3" src="{{r.imageUrl}}" >
+      <div class="media-body">
+        <h5 class="mt-0 mb-1"><a href="#">{{r.name}}</a></h5>
+        {{r.description}}
+      </div>
+    </li>
+  </ul> -->
+</div>
